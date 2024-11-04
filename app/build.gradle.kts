@@ -43,13 +43,17 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     // Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation ("com.google.code.gson:gson:2.11.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
+    val retrofit_version = "2.11.0"
+    implementation ("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation ("com.google.code.gson:gson:$retrofit_version")
+    implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
+    // Retrofit + RXjava3
+    implementation ("com.squareup.retrofit2:adapter-rxjava3:$retrofit_version")
 
     // Paging
     val paging_version = "3.3.2"
     implementation("androidx.paging:paging-runtime:$paging_version")
+    // Paging + RxJava3
     implementation ("androidx.paging:paging-rxjava3:$paging_version")
 
     // Dagger hilt
