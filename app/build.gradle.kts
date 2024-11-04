@@ -43,30 +43,26 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     // Retrofit
-    val retrofit_version = "2.11.0"
-    implementation ("com.squareup.retrofit2:retrofit:$retrofit_version")
-    implementation ("com.google.code.gson:gson:$retrofit_version")
-    implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
+    implementation (libs.retrofit)
+    implementation (libs.gson)
+    implementation (libs.converter.gson)
     // Retrofit + RXjava3
-    implementation ("com.squareup.retrofit2:adapter-rxjava3:$retrofit_version")
+    implementation (libs.adapter.rxjava3)
 
     // Paging
-    val paging_version = "3.3.2"
-    implementation("androidx.paging:paging-runtime:$paging_version")
+    implementation(libs.paging.runtime)
     // Paging + RxJava3
-    implementation ("androidx.paging:paging-rxjava3:$paging_version")
+    implementation (libs.paging.rxjava3)
 
     // Dagger hilt
-    implementation ("com.google.dagger:hilt-android:2.52")
-    annotationProcessor ("com.google.dagger:hilt-compiler:2.52")
+    implementation (libs.hilt.android)
+    annotationProcessor (libs.hilt.compiler)
 
     // Glide
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation (libs.glide)
 
-    // lifecycle
-    val lifecycle_version = "2.8.6"
     // lifecycle-ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version")
+    implementation(libs.lifecycle.viewmodel)
     // lifecycle-LiveData
-    implementation("androidx.lifecycle:lifecycle-livedata:$lifecycle_version")
+    implementation(libs.lifecycle.livedata)
 }

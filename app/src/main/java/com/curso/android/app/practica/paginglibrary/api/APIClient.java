@@ -4,10 +4,8 @@ import static com.curso.android.app.practica.paginglibrary.util.Utils.API_KEY;
 import static com.curso.android.app.practica.paginglibrary.util.Utils.BASE_URL;
 
 import com.curso.android.app.practica.paginglibrary.model.MovieResponse;
-import com.google.gson.internal.GsonBuildConfig;
 
 import io.reactivex.rxjava3.core.Single;
-import io.reactivex.rxjava3.plugins.RxJavaPlugins;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
